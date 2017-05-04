@@ -16,7 +16,7 @@ class SnapshotKitTests: SnapshotKitTestCase {
     
     override func setUp() {
         super.setUp()
-        recordMode = true
+        recordMode = false
     }
     
     func testViewsDefaultSizeSize() {
@@ -26,7 +26,7 @@ class SnapshotKitTests: SnapshotKitTestCase {
     
     func testDeviceSizes() {
         let view = UIView.makeViewWithPinnedLabel()
-        snapshot.withAllPhoneSizes().verify(view)
+        snapshot.allPhoneSizes().verify(view)
     }
     
     func testFixedWidth() {

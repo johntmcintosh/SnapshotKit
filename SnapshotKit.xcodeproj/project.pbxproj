@@ -16,6 +16,8 @@
 		5B9E8E1C1EBBBDD5002A85B5 /* SnapshotKitTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9E8E1B1EBBBDD5002A85B5 /* SnapshotKitTestController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B9E8E711EBBC0D2002A85B5 /* SnapshotKitTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9E8E1B1EBBBDD5002A85B5 /* SnapshotKitTestController.swift */; };
 		5B9E8E721EBBC0DF002A85B5 /* SnapshotKitTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9E8E161EBBBB10002A85B5 /* SnapshotKitTestCase.swift */; };
+		5B9E8E741EBBD64C002A85B5 /* DeviceSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9E8E731EBBD64C002A85B5 /* DeviceSize.swift */; };
+		5B9E8E751EBBD821002A85B5 /* DeviceSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9E8E731EBBD64C002A85B5 /* DeviceSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 		5B9E8E161EBBBB10002A85B5 /* SnapshotKitTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotKitTestCase.swift; sourceTree = "<group>"; };
 		5B9E8E191EBBBB89002A85B5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5B9E8E1B1EBBBDD5002A85B5 /* SnapshotKitTestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotKitTestController.swift; sourceTree = "<group>"; };
+		5B9E8E731EBBD64C002A85B5 /* DeviceSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceSize.swift; sourceTree = "<group>"; };
 		89E7B910AB5DCBF3E1466724 /* Pods-SnapshotKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotKitTests/Pods-SnapshotKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D001A79A384B0A5029CB619 /* Pods-SnapshotKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotKitTests/Pods-SnapshotKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FAB813282AAC86353EF3A7B /* Pods_SnapshotKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapshotKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +108,7 @@
 				5B9E8E001EBBBA58002A85B5 /* Info.plist */,
 				5B9E8E161EBBBB10002A85B5 /* SnapshotKitTestCase.swift */,
 				5B9E8E1B1EBBBDD5002A85B5 /* SnapshotKitTestController.swift */,
+				5B9E8E731EBBD64C002A85B5 /* DeviceSize.swift */,
 			);
 			path = SnapshotKit;
 			sourceTree = "<group>";
@@ -326,6 +330,7 @@
 			files = (
 				5B9E8E1C1EBBBDD5002A85B5 /* SnapshotKitTestController.swift in Sources */,
 				5B9E8E171EBBBB10002A85B5 /* SnapshotKitTestCase.swift in Sources */,
+				5B9E8E741EBBD64C002A85B5 /* DeviceSize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +340,7 @@
 			files = (
 				5B9E8E721EBBC0DF002A85B5 /* SnapshotKitTestCase.swift in Sources */,
 				5B9E8E711EBBC0D2002A85B5 /* SnapshotKitTestController.swift in Sources */,
+				5B9E8E751EBBD821002A85B5 /* DeviceSize.swift in Sources */,
 				5B9E8E0B1EBBBA58002A85B5 /* SnapshotKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
