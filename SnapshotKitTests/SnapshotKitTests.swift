@@ -29,13 +29,24 @@ class SnapshotKitTests: SnapshotKitTestCase {
         snapshot.withAllPhoneSizes().verify(view)
     }
     
-    func testFixedWidthExpandableHeight() {
+    func testFixedWidth() {
         let view = UIView.makeViewWithPinnedLabel()
         snapshot.fixed(width: 400.0).verify(view)
     }
     
-    func testFixedHeightExpandableWidth() {
-        
+    func testFixedHeight() {
+        let view = UIView.makeViewWithPinnedLabel()
+        snapshot.fixed(height: 400.0).verify(view)
+    }
+
+    func testFixedSize() {
+        let view = UIView.makeViewWithPinnedLabel()
+        snapshot.fixed(size: CGSize(width: 500.0, height: 500.0)).verify(view)
+    }
+    
+    func testDynamicSize() {
+        let view = UIView.makeViewWithPinnedLabel()
+        snapshot.dynamic().verify(view)
     }
 }
 
