@@ -5,6 +5,7 @@ target 'SnapshotKit' do
     pod 'Sourcery', '0.6.0'
     target 'SnapshotKitTests' do
         inherit! :search_paths
+        pod 'PureLayout', '3.0.2'
     end
 end
 

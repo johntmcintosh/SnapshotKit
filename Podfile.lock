@@ -4,16 +4,19 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - PureLayout (3.0.2)
   - Sourcery (0.6.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (= 2.1.4)
+  - PureLayout (= 3.0.2)
   - Sourcery (= 0.6.0)
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   Sourcery: b3a93fcdf9c256feeb16e85f4d1bbf46baa42464
 
-PODFILE CHECKSUM: 3e3613ccc2f567e8b8ba8b42773ea1f8d3995354
+PODFILE CHECKSUM: 8e857b65d6d299a524c2524f410cfac51044076e
 
 COCOAPODS: 1.2.1
