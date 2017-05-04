@@ -57,8 +57,8 @@ public class SnapshotKitTestController {
         return self
     }
     
-    func dynamic() -> SnapshotKitTestController {
-        sizeType = .dynamic
+    func sizeToFit() -> SnapshotKitTestController {
+        sizeType = .sizeToFit
         return self
     }
 
@@ -84,7 +84,7 @@ public class SnapshotKitTestController {
             container.translatesAutoresizingMaskIntoConstraints = false
             container.addConstraint(NSLayoutConstraint(item: container, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: width))
             
-            let name = "fixedwidth"
+            let name = "width-\(width)"
             testCase.FBSnapshotVerifyView(container, identifier: name, file: file, line: line)
         case .fixedHeight(let height):
             let container = makeContainerView(size: CGSize(width: 100, height: 100), cropNavigationBar: cropsNavigationBar)
@@ -99,7 +99,7 @@ public class SnapshotKitTestController {
             
             container.addConstraint(NSLayoutConstraint(item: container, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: height))
             
-            let name = "fixedheight"
+            let name = "height-\(height)"
             testCase.FBSnapshotVerifyView(container, identifier: name, file: file, line: line)
         case .sizes(let sizes):
             for size in sizes {
@@ -107,7 +107,7 @@ public class SnapshotKitTestController {
             }
         case .size(let size):
             runVerification(on: view, size: size, file: file, line: line)
-        case .dynamic:
+        case .sizeToFit:
             let container = makeContainerView(size: CGSize(width: 100, height: 100), cropNavigationBar: cropsNavigationBar)
             container.addSubview(view)
             view.translatesAutoresizingMaskIntoConstraints = false
@@ -118,7 +118,7 @@ public class SnapshotKitTestController {
             container.addConstraint(NSLayoutConstraint(item: view, attribute: .top, relatedBy: .equal, toItem: container, attribute: .top, multiplier: 1.0, constant: 0.0))
             container.addConstraint(NSLayoutConstraint(item: view, attribute: .bottom, relatedBy: .equal, toItem: container, attribute: .bottom, multiplier: 1.0, constant: 0.0))
             
-            let name = "dynamic"
+            let name = "sizeToFit"
             testCase.FBSnapshotVerifyView(container, identifier: name, file: file, line: line)
         }
     }
@@ -151,7 +151,7 @@ enum SizeType {
     case fixedHeight(CGFloat)
     case size(CGSize)
     case sizes([CGSize])
-    case dynamic
+    case sizeToFit
 }
 
 

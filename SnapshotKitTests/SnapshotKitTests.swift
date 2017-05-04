@@ -46,7 +46,7 @@ class SnapshotKitTests: SnapshotKitTestCase {
     
     func testDynamicSize() {
         let view = UIView.makeViewWithPinnedLabel()
-        snapshot.dynamic().verify(view)
+        snapshot.sizeToFit().verify(view)
     }
 }
 
