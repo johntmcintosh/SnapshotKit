@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CE7E86E7EAC2276A6DC0AB0 /* Pods_SnapshotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAB813282AAC86353EF3A7B /* Pods_SnapshotKit.framework */; };
+		3E3CB9F789141C811D58031A /* Pods_SnapshotKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264616720E9E9ABC308368F4 /* Pods_SnapshotKitTests.framework */; };
 		5B9E8E061EBBBA58002A85B5 /* SnapshotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9E8DFC1EBBBA58002A85B5 /* SnapshotKit.framework */; };
 		5B9E8E0B1EBBBA58002A85B5 /* SnapshotKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9E8E0A1EBBBA58002A85B5 /* SnapshotKitTests.swift */; };
 		5B9E8E0D1EBBBA58002A85B5 /* SnapshotKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B9E8DFF1EBBBA58002A85B5 /* SnapshotKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B9E8E171EBBBB10002A85B5 /* SnapshotKitTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9E8E161EBBBB10002A85B5 /* SnapshotKitTestCase.swift */; };
+		5B9E8E1C1EBBBDD5002A85B5 /* SnapshotKitTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9E8E1B1EBBBDD5002A85B5 /* SnapshotKitTestController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B9E8E711EBBC0D2002A85B5 /* SnapshotKitTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9E8E1B1EBBBDD5002A85B5 /* SnapshotKitTestController.swift */; };
+		5B9E8E721EBBC0DF002A85B5 /* SnapshotKitTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9E8E161EBBBB10002A85B5 /* SnapshotKitTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +29,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		264616720E9E9ABC308368F4 /* Pods_SnapshotKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapshotKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FFAE9813D41099234F56B4E /* Pods-SnapshotKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotKit/Pods-SnapshotKit.release.xcconfig"; sourceTree = "<group>"; };
 		5B9E8DFC1EBBBA58002A85B5 /* SnapshotKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapshotKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9E8DFF1EBBBA58002A85B5 /* SnapshotKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnapshotKit.h; sourceTree = "<group>"; };
 		5B9E8E001EBBBA58002A85B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B9E8E051EBBBA58002A85B5 /* SnapshotKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9E8E0A1EBBBA58002A85B5 /* SnapshotKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotKitTests.swift; sourceTree = "<group>"; };
 		5B9E8E0C1EBBBA58002A85B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B9E8E161EBBBB10002A85B5 /* SnapshotKitTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotKitTestCase.swift; sourceTree = "<group>"; };
+		5B9E8E191EBBBB89002A85B5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5B9E8E1B1EBBBDD5002A85B5 /* SnapshotKitTestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotKitTestController.swift; sourceTree = "<group>"; };
+		89E7B910AB5DCBF3E1466724 /* Pods-SnapshotKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotKitTests/Pods-SnapshotKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D001A79A384B0A5029CB619 /* Pods-SnapshotKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotKitTests/Pods-SnapshotKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		9FAB813282AAC86353EF3A7B /* Pods_SnapshotKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapshotKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F111D991CB44B3A45ED70C58 /* Pods-SnapshotKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotKit/Pods-SnapshotKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE7E86E7EAC2276A6DC0AB0 /* Pods_SnapshotKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +60,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B9E8E061EBBBA58002A85B5 /* SnapshotKit.framework in Frameworks */,
+				3E3CB9F789141C811D58031A /* Pods_SnapshotKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		324CC5BA95C9F2E32423A07A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F111D991CB44B3A45ED70C58 /* Pods-SnapshotKit.debug.xcconfig */,
+				2FFAE9813D41099234F56B4E /* Pods-SnapshotKit.release.xcconfig */,
+				89E7B910AB5DCBF3E1466724 /* Pods-SnapshotKitTests.debug.xcconfig */,
+				8D001A79A384B0A5029CB619 /* Pods-SnapshotKitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5B9E8DF21EBBBA58002A85B5 = {
 			isa = PBXGroup;
 			children = (
 				5B9E8DFE1EBBBA58002A85B5 /* SnapshotKit */,
 				5B9E8E091EBBBA58002A85B5 /* SnapshotKitTests */,
 				5B9E8DFD1EBBBA58002A85B5 /* Products */,
+				5B9E8E181EBBBB89002A85B5 /* Frameworks */,
+				324CC5BA95C9F2E32423A07A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +103,8 @@
 			children = (
 				5B9E8DFF1EBBBA58002A85B5 /* SnapshotKit.h */,
 				5B9E8E001EBBBA58002A85B5 /* Info.plist */,
+				5B9E8E161EBBBB10002A85B5 /* SnapshotKitTestCase.swift */,
+				5B9E8E1B1EBBBDD5002A85B5 /* SnapshotKitTestController.swift */,
 			);
 			path = SnapshotKit;
 			sourceTree = "<group>";
@@ -84,6 +116,16 @@
 				5B9E8E0C1EBBBA58002A85B5 /* Info.plist */,
 			);
 			path = SnapshotKitTests;
+			sourceTree = "<group>";
+		};
+		5B9E8E181EBBBB89002A85B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B9E8E191EBBBB89002A85B5 /* XCTest.framework */,
+				9FAB813282AAC86353EF3A7B /* Pods_SnapshotKit.framework */,
+				264616720E9E9ABC308368F4 /* Pods_SnapshotKitTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B9E8E101EBBBA58002A85B5 /* Build configuration list for PBXNativeTarget "SnapshotKit" */;
 			buildPhases = (
+				77B2E43296101B47B322C351 /* [CP] Check Pods Manifest.lock */,
 				5B9E8DF71EBBBA58002A85B5 /* Sources */,
 				5B9E8DF81EBBBA58002A85B5 /* Frameworks */,
 				5B9E8DF91EBBBA58002A85B5 /* Headers */,
 				5B9E8DFA1EBBBA58002A85B5 /* Resources */,
+				AC73C6F86EE693813099B409 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B9E8E131EBBBA58002A85B5 /* Build configuration list for PBXNativeTarget "SnapshotKitTests" */;
 			buildPhases = (
+				B488C83F53BEB8D163823A1D /* [CP] Check Pods Manifest.lock */,
 				5B9E8E011EBBBA58002A85B5 /* Sources */,
 				5B9E8E021EBBBA58002A85B5 /* Frameworks */,
 				5B9E8E031EBBBA58002A85B5 /* Resources */,
+				649E09B3486FC1F8FF96513E /* [CP] Embed Pods Frameworks */,
+				EEFCD3271B531FD52BFA6A77 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +196,7 @@
 					5B9E8DFB1EBBBA58002A85B5 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = PSK5X2GYRA;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					5B9E8E041EBBBA58002A85B5 = {
@@ -193,11 +241,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		649E09B3486FC1F8FF96513E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapshotKitTests/Pods-SnapshotKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77B2E43296101B47B322C351 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC73C6F86EE693813099B409 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapshotKit/Pods-SnapshotKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B488C83F53BEB8D163823A1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EEFCD3271B531FD52BFA6A77 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapshotKitTests/Pods-SnapshotKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5B9E8DF71EBBBA58002A85B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B9E8E1C1EBBBDD5002A85B5 /* SnapshotKitTestController.swift in Sources */,
+				5B9E8E171EBBBB10002A85B5 /* SnapshotKitTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +333,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B9E8E721EBBC0DF002A85B5 /* SnapshotKitTestCase.swift in Sources */,
+				5B9E8E711EBBC0D2002A85B5 /* SnapshotKitTestController.swift in Sources */,
 				5B9E8E0B1EBBBA58002A85B5 /* SnapshotKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,37 +453,62 @@
 		};
 		5B9E8E111EBBBA58002A85B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F111D991CB44B3A45ED70C58 /* Pods-SnapshotKit.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PSK5X2GYRA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = SnapshotKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.johntmcintosh.SnapshotKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		5B9E8E121EBBBA58002A85B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FFAE9813D41099234F56B4E /* Pods-SnapshotKit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PSK5X2GYRA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = SnapshotKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.johntmcintosh.SnapshotKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -363,6 +518,7 @@
 		};
 		5B9E8E141EBBBA58002A85B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89E7B910AB5DCBF3E1466724 /* Pods-SnapshotKitTests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = PSK5X2GYRA;
 				INFOPLIST_FILE = SnapshotKitTests/Info.plist;
@@ -375,6 +531,7 @@
 		};
 		5B9E8E151EBBBA58002A85B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D001A79A384B0A5029CB619 /* Pods-SnapshotKitTests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = PSK5X2GYRA;
 				INFOPLIST_FILE = SnapshotKitTests/Info.plist;
