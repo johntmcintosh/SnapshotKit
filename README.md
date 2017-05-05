@@ -16,7 +16,11 @@ SnapshotKit provides a set of wrappers around [FBSnapshotTestCase](https://githu
 
 This project is currently in an early state and the public interface is likely to change as it matures. Please provide and feedback or suggestions on what would work best for your use-case.
 
-In particular, the projects I have been using this with so far are iPhone-only, so I haven't put much consideration into the interface for running iPad screenshots.
+In particular, the projects I have been using this with so far are iPhone-only, so I have not yet added a built-in interface iPad sized screenshots.
+
+I'd also like to provide a better interface for specifying which devices sizes you care about. For example, for apps supporting iOS 10 and later, there's really no need to be running screenshot tests against the iPhone 4s device size, although that size is still included with `allPhoneSizes` right now. Potentially this would look something like adding the ability to say `snapshot.registerSizes([.iPhone5, .iPhone6, .iPhone6plus])` from the test class's `setUp`. 
+
+I'm not convinced that I'm satisfied with the naming convention of the screenshots that are currently generated, and need to evaluate whether additional controls need to be exposed for overriding the defualt behavior of screenshot naming.
 
 ## Installing SnapshotKit
 <!--[![CocoaPods compatible](https://img.shields.io/cocoapods/v/SnapshotKit.svg)](#cocoapods)-->
