@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 
 
-enum iPhoneDeviceSize {
+public enum iPhoneDeviceSize {
     case iPhone4
     case iPhone5
     case iPhone6
     case iPhone6plus
     
-    var resolution: CGSize {
+    public var resolution: CGSize {
         switch self {
         case .iPhone4:
             return CGSize(width: 320.0, height: 480.0)
@@ -30,7 +30,7 @@ enum iPhoneDeviceSize {
     }
     
     // TODO: Replace with sourcery-generated
-    static var allCases: [iPhoneDeviceSize] {
+    public static var allCases: [iPhoneDeviceSize] {
         return [.iPhone4, .iPhone5, .iPhone6, .iPhone6plus]
     }
 }

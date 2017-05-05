@@ -26,51 +26,51 @@ public class SnapshotKitTestController {
     var sizeType: SizeType = .unspecified
     var cropsNavigationBar = false
     
-    init(testCase: FBSnapshotTestCase) {
+    public init(testCase: FBSnapshotTestCase) {
         self.testCase = testCase
     }
     
-    func excludeNavigationBar() -> SnapshotKitTestController {
+    public func excludeNavigationBar() -> SnapshotKitTestController {
         cropsNavigationBar = true
         return self
     }
     
-    func allPhoneSizes() -> SnapshotKitTestController {
+    public func allPhoneSizes() -> SnapshotKitTestController {
         let sizes = iPhoneDeviceSize.allCases.flatMap { $0.resolution }
         return self.sizes(sizes)
     }
     
-    func fixed(width: CGFloat) -> SnapshotKitTestController {
+    public func fixed(width: CGFloat) -> SnapshotKitTestController {
         sizeType = .fixedWidth(width)
         return self
     }
 
-    func fixed(height: CGFloat) -> SnapshotKitTestController {
+    public func fixed(height: CGFloat) -> SnapshotKitTestController {
         sizeType = .fixedHeight(height)
         return self
     }
 
-    func fixed(size: CGSize) -> SnapshotKitTestController {
+    public func fixed(size: CGSize) -> SnapshotKitTestController {
         sizeType = .size(size)
         return self
     }
     
-    func sizes(_ sizes: [CGSize]) -> SnapshotKitTestController {
+    public func sizes(_ sizes: [CGSize]) -> SnapshotKitTestController {
         sizeType = .sizes(sizes)
         return self
     }
     
-    func sizeToFit() -> SnapshotKitTestController {
+    public func sizeToFit() -> SnapshotKitTestController {
         sizeType = .sizeToFit
         return self
     }
 
-    func verify(_ viewController: UIViewController, file: StaticString = #file, line: UInt = #line) {
+    public func verify(_ viewController: UIViewController, file: StaticString = #file, line: UInt = #line) {
         verify(viewController.view, file: file, line: line)
     }
     
     // TODO: Do we need layer-based verification?
-    func verify(_ view: UIView, file: StaticString = #file, line: UInt = #line) {
+    public func verify(_ view: UIView, file: StaticString = #file, line: UInt = #line) {
         switch sizeType {
         case .unspecified:
             testCase.FBSnapshotVerifyView(view, file: file, line: line)

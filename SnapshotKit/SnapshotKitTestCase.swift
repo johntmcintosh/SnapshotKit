@@ -10,16 +10,16 @@ import Foundation
 import FBSnapshotTestCase
 
 
-class SnapshotKitTestCase: FBSnapshotTestCase {
+open class SnapshotKitTestCase: FBSnapshotTestCase {
     
-    var snapshot: SnapshotKitTestController!
+    public var snapshot: SnapshotKitTestController!
     
-    override func setUp() {
+    override open func setUp() {
         super.setUp()
         snapshot = SnapshotKitTestController(testCase: self)
     }
     
-    override func tearDown() {
+    override open func tearDown() {
         snapshot = nil
         super.tearDown()
     }
