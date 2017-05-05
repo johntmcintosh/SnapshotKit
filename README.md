@@ -1,10 +1,10 @@
 # SnapshotKit
 
-<!--[![Build Status](https://travis-ci.org/johntmcintosh/SnapshotKit.svg?branch=master)](https://travis-ci.org/johntmcintosh/SnapshotKit)-->
 <!--![CodeCov](https://img.shields.io/codecov/c/github/johntmcintosh/SnapshotKit.svg)-->
 <!--[![CocoaPods compatible](https://img.shields.io/cocoapods/v/SnapshotKit.svg)](#cocoapods)-->
 <!--[![CocoaPods](https://img.shields.io/cocoapods/dt/SnapshotKit.svg)]()-->
 <!--[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)-->
+[![Build Status](https://travis-ci.org/johntmcintosh/SnapshotKit.svg?branch=master)](https://travis-ci.org/johntmcintosh/SnapshotKit)
 ![Swift 3.1.0](https://img.shields.io/badge/Swift-3.1.0-orange.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
@@ -154,8 +154,8 @@ SnapshotKit requires iOS 9.0 or higher.
 
 ## Credits
 
-SnapshotKit was created by [John making your test file a subclass of SnapshotKitTestCase rather than `FBSnapshotTestCasentosh](http://twitter`.`com/johntmcintosh).`
-.
+SnapshotKit was created by [John McIntosh](http://twitter.com/johntmcintosh).
+
 ## License
 
 SnapshotKit is available under the MIT license. See the LICENSE file for more info.
