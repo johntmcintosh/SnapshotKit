@@ -1,10 +1,10 @@
 # SnapshotKit
 
-<!--![CodeCov](https://img.shields.io/codecov/c/github/johntmcintosh/SnapshotKit.svg)-->
 <!--[![CocoaPods compatible](https://img.shields.io/cocoapods/v/SnapshotKit.svg)](#cocoapods)-->
 <!--[![CocoaPods](https://img.shields.io/cocoapods/dt/SnapshotKit.svg)]()-->
 <!--[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)-->
 [![Build Status](https://travis-ci.org/johntmcintosh/SnapshotKit.svg?branch=master)](https://travis-ci.org/johntmcintosh/SnapshotKit)
+![CodeCov](https://img.shields.io/codecov/c/github/johntmcintosh/SnapshotKit.svg)
 ![Swift 3.1.0](https://img.shields.io/badge/Swift-3.1.0-orange.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
@@ -12,6 +12,11 @@
 
 SnapshotKit provides a set of wrappers around [FBSnapshotTestCase](https://github.com/facebook/ios-snapshot-test-case) to make it easier to test common use-cases for iOS apps.
 
+## Work in Progress
+
+This project is currently in an early state and the public interface is likely to change as it matures. Please provide and feedback or suggestions on what would work best for your use-case.
+
+In particular, the projects I have been using this with so far are iPhone-only, so I haven't put much consideration into the interface for running iPad screenshots.
 
 ## Installing SnapshotKit
 <!--[![CocoaPods compatible](https://img.shields.io/cocoapods/v/SnapshotKit.svg)](#cocoapods)-->
