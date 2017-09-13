@@ -17,6 +17,7 @@ enum SizeType {
     case size(CGSize)
     case sizes([CGSize])
     case sizeToFit
+    case simulator
 }
 
 
@@ -64,8 +65,14 @@ public class SnapshotKitTestController {
         sizeType = .sizeToFit
         return self
     }
-
+    
+    public func simulator() -> SnapshotKitTestController {
+        sizeType = .simulator
+        return self
+    }
+    
     public func verify(_ viewController: UIViewController, file: StaticString = #file, line: UInt = #line) {
+        UIApplication.shared.keyWindow?.rootViewController = viewController
         verify(viewController.view, file: file, line: line)
     }
     
@@ -94,6 +101,8 @@ public class SnapshotKitTestController {
             }
         case .size(let size):
             runVerification(on: view, size: size, file: file, line: line)
+        case .simulator:
+            runVerificationInSimulator(on: view, file: file, line: line)
         }
     }
     
@@ -106,34 +115,40 @@ public class SnapshotKitTestController {
         
         testCase.FBSnapshotVerifyView(container, identifier: name, file: file, line: line)
     }
+    
+    private func runVerificationInSimulator(on view: UIView, file: StaticString, line: UInt) {
+        let size = view.bounds.size
+        let name = NSStringFromCGSize(size)
+        testCase.FBSnapshotVerifyView(view, identifier: name, file: file, line: line)
+    }
 }
 
 
 private extension UIView {
-
+    
     static func makeAutolayoutContainer(wrapping subview: UIView) -> UIView {
         let container = makeAutolayoutContainer()
         container.addSubviewForAutolayout(subview)
         subview.pinEdgesToSuperviewEdges()
         return container
     }
-
+    
     static func makeAutolayoutContainer() -> UIView {
         let view = makeContainer(width: 100.0, height: 100.0)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }
-
+    
     static func makeContainer(size: CGSize, cropNavigationBar: Bool = false) -> UIView {
         let defaultHeight: CGFloat = size.height
         let height = (cropNavigationBar) ? defaultHeight - 64.0 : defaultHeight
         return makeContainer(width: size.width, height: height)
     }
-
+    
     static func makeContainer(width: CGFloat, height: CGFloat) -> UIView {
         return UIView(frame: CGRect(x: 0, y: 0, width: width, height: height))
     }
-
+    
     func addSubviewForAutolayout(_ view: UIView) {
         addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
