@@ -71,55 +71,55 @@ public class SnapshotKitTestController {
         return self
     }
     
-    public func verify(_ viewController: UIViewController, file: StaticString = #file, line: UInt = #line) {
+    public func verify(_ viewController: UIViewController, tolerance: CGFloat = 0.005, file: StaticString = #file, line: UInt = #line) {
         UIApplication.shared.keyWindow?.rootViewController = viewController
-        verify(viewController.view, file: file, line: line)
+        verify(viewController.view, tolerance: tolerance, file: file, line: line)
     }
     
     // TODO: Do we need layer-based verification?
-    public func verify(_ view: UIView, file: StaticString = #file, line: UInt = #line) {
+    public func verify(_ view: UIView, tolerance: CGFloat = 0.0, file: StaticString = #file, line: UInt = #line) {
         switch sizeType {
         case .unspecified:
-            testCase.FBSnapshotVerifyView(view, file: file, line: line)
+            testCase.FBSnapshotVerifyView(view, tolerance: tolerance, file: file, line: line)
         case .fixedWidth(let width):
             let container = UIView.makeAutolayoutContainer(wrapping: view)
             container.pin(width: width)
             let name = "width-\(width)"
-            testCase.FBSnapshotVerifyView(container, identifier: name, file: file, line: line)
+            testCase.FBSnapshotVerifyView(container, identifier: name, tolerance: tolerance, file: file, line: line)
         case .fixedHeight(let height):
             let container = UIView.makeAutolayoutContainer(wrapping: view)
             container.pin(height: height)
             let name = "height-\(height)"
-            testCase.FBSnapshotVerifyView(container, identifier: name, file: file, line: line)
+            testCase.FBSnapshotVerifyView(container, identifier: name, tolerance: tolerance, file: file, line: line)
         case .sizeToFit:
             let container = UIView.makeAutolayoutContainer(wrapping: view)
             let name = "sizeToFit"
-            testCase.FBSnapshotVerifyView(container, identifier: name, file: file, line: line)
+            testCase.FBSnapshotVerifyView(container, identifier: name, tolerance: tolerance, file: file, line: line)
         case .sizes(let sizes):
             for size in sizes {
-                runVerification(on: view, size: size, file: file, line: line)
+                runVerification(on: view, size: size, tolerance: tolerance, file: file, line: line)
             }
         case .size(let size):
-            runVerification(on: view, size: size, file: file, line: line)
+            runVerification(on: view, size: size, tolerance: tolerance, file: file, line: line)
         case .simulator:
-            runVerificationInSimulator(on: view, file: file, line: line)
+            runVerificationInSimulator(on: view, tolerance: tolerance, file: file, line: line)
         }
     }
     
-    private func runVerification(on view: UIView, size: CGSize, file: StaticString, line: UInt) {
+    private func runVerification(on view: UIView, size: CGSize, tolerance: CGFloat, file: StaticString, line: UInt) {
         let name = NSStringFromCGSize(size)
         
         let container = UIView.makeContainer(size: size, cropNavigationBar: cropsNavigationBar)
         view.frame = container.bounds
         container.addSubview(view)
         
-        testCase.FBSnapshotVerifyView(container, identifier: name, file: file, line: line)
+        testCase.FBSnapshotVerifyView(container, identifier: name, tolerance: tolerance, file: file, line: line)
     }
     
-    private func runVerificationInSimulator(on view: UIView, file: StaticString, line: UInt) {
+    private func runVerificationInSimulator(on view: UIView, tolerance: CGFloat, file: StaticString, line: UInt) {
         let size = view.bounds.size
         let name = NSStringFromCGSize(size)
-        testCase.FBSnapshotVerifyView(view, identifier: name, file: file, line: line)
+        testCase.FBSnapshotVerifyView(view, identifier: name, tolerance: tolerance, file: file, line: line)
     }
 }
 
