@@ -71,7 +71,7 @@ public class SnapshotKitTestController {
         return self
     }
     
-    public func verify(_ viewController: UIViewController, tolerance: CGFloat = 0.005, file: StaticString = #file, line: UInt = #line) {
+    public func verify(_ viewController: UIViewController, tolerance: CGFloat = 0.0, file: StaticString = #file, line: UInt = #line) {
         UIApplication.shared.keyWindow?.rootViewController = viewController
         verify(viewController.view, tolerance: tolerance, file: file, line: line)
     }
